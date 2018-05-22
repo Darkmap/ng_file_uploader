@@ -1,0 +1,11 @@
+<div id="dropZone"
+     class="drop-zone"
+     [class.over]="dragOverFlag"
+     (drop)="dropFile($event)"
+     (dragover)="onDragOver($event)"
+     (dragleave)="onDragLeave($event)">
+  <div class="content">
+    <ng-content></ng-content>
+    {{placeholder}}
+  </div>
+</div>
